@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".SecondActivity">
+
+    <!--Create Views with id for Java class to references and let the user enter data-->
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center">
+        <Button
+            android:id="@+id/bt_newf"
+            style="@style/style1"
+            android:text="New Friend"/>
+        <Button
+            android:id="@+id/bt_exit"
+            style="@style/style1"
+            android:text="Exit" />
+    </LinearLayout>
+    <!--set the data to be displayed in a gridview with 4 columns, and have an id that Java classes can reference to -->
+    <GridView
+        android:id="@+id/gridview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:numColumns="4"/>
+</LinearLayout>

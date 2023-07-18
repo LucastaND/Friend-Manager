@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".FriendActivity">
+
+<!--Create button exit with id for Java class to references-->
+    <Button
+        android:id="@+id/bt_exit"
+        style="@style/style1"
+        android:text="Exit"
+        android:layout_gravity="right"/>
+
+    <!--Create Views with id for Java class to references and let the user enter data-->
+    <EditText
+        android:id="@+id/et_name"
+        android:layout_width="400dp"
+        android:layout_height="wrap_content"
+        android:hint="Enter Name"
+        android:textSize="20dp"
+        android:inputType="textPersonName"/>
+    <EditText
+        android:id="@+id/et_phone"
+        android:layout_width="400dp"
+        android:layout_height="wrap_content"
+        android:hint="Enter Phone Number"
+        android:textSize="20dp"
+        android:inputType="number|phone"/>
+    <EditText
+        android:id="@+id/et_address"
+        android:layout_width="400dp"
+        android:layout_height="wrap_content"
+        android:hint="Enter Address"
+        android:textSize="20dp"
+        android:inputType="text"/>
+
+<!--Create buttons with id for Java class to references, design and arrange then horizontally-->
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center">
+        <Button
+            android:id="@+id/bt_save"
+            style="@style/style1"
+            android:text="Save"/>
+        <Button
+            android:id="@+id/bt_select"
+            style="@style/style1"
+            android:text="Select"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center">
+        <Button
+            android:id="@+id/bt_delete"
+            style="@style/style1"
+            android:text="Delete"/>
+        <Button
+            android:id="@+id/bt_update"
+            style="@style/style1"
+            android:text="Update"/>
+    </LinearLayout>
+<!--set the data to be displayed in a gridview with 2 columns, and have an id that Java classes can reference to -->
+    <GridView
+        android:id="@+id/gridview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:numColumns="2"/>
+</LinearLayout>
